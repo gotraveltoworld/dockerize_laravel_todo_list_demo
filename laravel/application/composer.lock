@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba39dcf9eb232ec5b385b5369fcad874",
+    "content-hash": "bcc52b5d177b43b3fa0c060de1659777",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2806,16 +2806,16 @@
         },
         {
             "name": "tymon/jwt-auth",
-            "version": "dev-develop",
+            "version": "1.0.0-rc.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tymondesigns/jwt-auth.git",
-                "reference": "f72b8eb"
+                "reference": "63698d304554e5d0bc3eb481cc260a9fc900e151"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/f72b8eb",
-                "reference": "f72b8eb",
+                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/63698d304554e5d0bc3eb481cc260a9fc900e151",
+                "reference": "63698d304554e5d0bc3eb481cc260a9fc900e151",
                 "shasum": ""
             },
             "require": {
@@ -4695,17 +4695,10 @@
             "time": "2018-12-25T11:19:39+00:00"
         }
     ],
-    "aliases": [
-        {
-            "alias": "1.0.0-rc.3.2",
-            "alias_normalized": "1.0.0.0-RC3.2",
-            "version": "dev-develop",
-            "package": "tymon/jwt-auth"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "tymon/jwt-auth": 20
+        "tymon/jwt-auth": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
