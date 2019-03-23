@@ -13,8 +13,8 @@ DB_PWD=root_pwd
 2. `docker-compose up -d`
 3. `docker-compose exec laravel sh /init.sh`
 4. `docker-compose exec laravel composer install -o`
-5. `docker-compose exec laravel php artisan migrate`
-6. `docker-compose exec laravel php artisan db:seed --class=UsersTableSeeder`
+5. `docker-compose exec laravel php artisan jwt:secret`
+6. `docker-compose exec laravel php artisan migrate:refresh --seed`
 
 ## APIs (JWT):
 Root: http://localhost:8008
