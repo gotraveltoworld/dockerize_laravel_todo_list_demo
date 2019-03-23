@@ -1,0 +1,14 @@
+.DS_Store
+mysql/dbdata
+*.log
+
+laravel/application/node_modules
+laravel/application/public/hot
+laravel/application/public/storage
+laravel/application/storage/*.key
+laravel/application/vendor
+.env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+
