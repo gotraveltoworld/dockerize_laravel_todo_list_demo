@@ -56,19 +56,21 @@ class TodoListController extends Controller
             ]);
         }
 
-        $oriName = request()->file('attachment')->getClientOriginalName();
-        $ext = request()->file('attachment')->getClientOriginalExtension();
-        $fileName = md5("{$oriName}.{$ext}"). '-'. uniqid(). '.'. $ext;
-        $path = request()->file('attachment')->storeAs(
-            'public/attachments',
-            $fileName
-        );
+        if (request()->hasFile('attachment')) {
+            $oriName = request()->file('attachment')->getClientOriginalName();
+            $ext = request()->file('attachment')->getClientOriginalExtension();
+            $fileName = md5("{$oriName}.{$ext}"). '-'. uniqid(). '.'. $ext;
+            $path = request()->file('attachment')->storeAs(
+                'public/attachments',
+                $fileName
+            );
+        }
 
         $id = $this->__model->addToDoList(
             $request['title'],
             $request['content'],
-            $fileName,
-            $oriName
+            $fileName ?? '',
+            $oriName ?? ''
         );
         return response()->json([
             'data' => $id
