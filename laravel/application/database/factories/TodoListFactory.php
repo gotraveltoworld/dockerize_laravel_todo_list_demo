@@ -11,5 +11,8 @@ $factory->define(App\TodoList::class, function (Faker $faker) {
         'created_at' => gmdate('Y-m-d H:i:s'),
         'updated_at' => gmdate('Y-m-d H:i:s'),
         'deleted_at' => gmdate('Y-m-d H:i:s'),
+        'id' => function () {
+            return factory(App\TodoList::class)->create()->id;
+        },
     ];
 });
